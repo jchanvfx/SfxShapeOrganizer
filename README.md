@@ -11,6 +11,8 @@ Compatibility: Silhouette v5.1 and up, not tested in previous versions
 
 This Script will organise your roto shapes from one Layer into separate Layers based off each shapes color
 
+![screencap01](https://raw.githubusercontent.com/picostyle/ShapeOrganizer/master/jc_shapeOrganizer.png)
+
 More info here at: https://vimeo.com/93702764
 
 --- 
