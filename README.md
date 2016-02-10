@@ -3,9 +3,9 @@
 
 ---
 
-2014 Johnny Chan  - www.picostyle.com  
-for bugs please email me at johnny@picostyle.com  
-Compatibility: Silhouette v5.1 and up, not tested in previous versions
+2016 Johnny Chan  - www.picostyle.com
+for bugs please email me at johnny@picostyle.com
+Compatibility: Silhouette v5.2 and up
 
 ---
 
@@ -15,30 +15,30 @@ This Script will organise your roto shapes from one Layer into separate Layers b
 
 More info here at: https://vimeo.com/93702764
 
---- 
+---
 
 ```
 To Install this Script
 
-Go to the scripts folder of your Silhouette installation.  
+Go to the scripts folder of your Silhouette installation.
 Finding the Scripts Location.
 
-WINDOWS:  
+WINDOWS:
 
-go to C:\Program Files\SilhouetteFX\Silhouette v5.1\resources\scripts.
+go to C:\Program Files\SilhouetteFX\Silhouette v5.2\resources\scripts.
 
-LINUX  
+LINUX
 
-go to /opt/SilhouetteFX/silhouette v5.1/resources/scripts.
+go to /opt/SilhouetteFX/silhouette v5.2/resources/scripts.
 
-MacOSX  
- 
-go to /Applications/Silhouette v5.1, right-click on Silhouette and select Show Package Contents.  
+MacOSX
 
-A new Browser window will open.  
+go to /Applications/Silhouette v5.2, right-click on Silhouette and select Show Package Contents.
+
+A new Browser window will open.
 In the new Browser window, go to Contents/Resources/scripts.
 
-Copy the script you downloaded to the "actions" folder  
+Copy the script you downloaded to the "actions" folder
 Restart Silhouette and you should have a menu name "PicoStyle"
 ```
 
@@ -46,7 +46,7 @@ Restart Silhouette and you should have a menu name "PicoStyle"
 
 Anyways I hope this script work out for you.
 
-Cheers  
+Cheers
 Johnny
 
 ---------------------------------------------------------------------------------------------
