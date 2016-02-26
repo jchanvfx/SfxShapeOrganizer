@@ -1,21 +1,14 @@
 
 ####Shape Organizer
 
----
-
-2016 Johnny Chan  - www.picostyle.com
-for bugs please email me at johnny@picostyle.com
+2016 Johnny Chan - johnny@picostyle.com <br />
 Compatibility: Silhouette v5.2 and up
-
----
 
 This Script will organise your roto shapes from one Layer into separate Layers based off each shapes color
 
 ![screencap01](https://raw.githubusercontent.com/picostyle/ShapeOrganizer/master/jc_shapeOrganizer.png)
 
 More info here at: https://vimeo.com/93702764
-
----
 
 ```
 To Install this Script
@@ -42,11 +35,7 @@ Copy the script you downloaded to the "actions" folder
 Restart Silhouette and you should have a menu name "PicoStyle"
 ```
 
----------------------------------------------------------------------------------------------
-
 Anyways I hope this script work out for you.
 
-Cheers
+Cheers, <br />
 Johnny
-
----------------------------------------------------------------------------------------------
