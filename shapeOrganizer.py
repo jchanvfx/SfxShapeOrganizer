@@ -1,21 +1,53 @@
 # Shape Organizer v1.1
-# (c) 2016 Johnny Chan  - www.picostyle.com
-# For bugs please email me at johnny@picostyle.com
 # Compatibility: Silhouette v5.2 and up
-# -------------------------------------------------------------------------------
 
-# This Script will organise your roto shapes from one Layer into separate Layers based off each shapes color
+# This Script will organise your roto shapes from one Layer into separate Layers
+# based off each shapes color
+
+# ---------------------------------------------------------------------------------------
+
+# (c) 2016, Johnny Chan - johnny@picostyle.com
+# All rights reserved.
+
+# Redistribution and use in source and binary forms, with or without modification,
+# are permitted provided that the following conditions are met:
+
+# * Redistributions of source code must retain the above copyright notice,
+#   this list of conditions and the following disclaimer.
+
+# * Redistributions in binary form must reproduce the above copyright notice,
+#   this list of conditions and the following disclaimer in the documentation and/or
+#   other materials provided with the distribution.
+
+# * Neither the name of the Johnny Chan nor the names of its contributors
+#   may be used to endorse or promote products derived from this software without
+#   specific prior written permission.
+
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+# PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+# OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+# OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+# EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# ---------------------------------------------------------------------------------------
 
 import fx
 
 
 class ShapeOrganizer(fx.Action):
     """
-    This Script will organise your roto shapes from one Layer into separate Layers based off each shapes color.
+    This Script will organise your roto shapes from one Layer into
+    separate Layers based off the shape colors.
     """
 
     def __init__(self):
-        fx.Action.__init__(self, 'Shape Tools|Shape Organizer' , root='PicoStyle')
+        fx.Action.__init__(self, 'Shape Organizer', menu='Shape Tools', root='PicoStyle')
 
     def available(self):
         session = fx.activeSession()
@@ -72,13 +104,13 @@ class ShapeOrganizer(fx.Action):
 
             # _keep original selection Yes/No
             msg = (
-                'Do you want to delete your original selection?<br/>'
+                'Keep Original Selection?<br/>'
                 'Delete :: [ <span style="color:#FF00FF"><b>{}</b></span> ]'.format(selection.label))
 
             if (fx.askQuestion(msg, title='Keep Original', okText='Yes', cancelText='No')):
-                fx.delete([selection])
-            else:
                 selection.visible = False
+            else:
+                fx.delete([selection])
 
             fx.select(newSelection)
             fx.endUndo()
