@@ -1,7 +1,7 @@
 
-####Shape Organizer
+# SilhouetteFX Shape Organizer
 
-2016 Johnny Chan - johnny@picostyle.com <br />
+2016 Johnny Chan - www.chantasticvfx.com <br />
 Compatibility: Silhouette v5.2 and up
 
 This Script will organise your roto shapes from one Layer into separate Layers based off each shapes color
