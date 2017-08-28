@@ -4,9 +4,7 @@
 # This Script will organise your roto shapes from one Layer into separate Layers
 # based off each shapes color
 
-# ---------------------------------------------------------------------------------------
-
-# (c) 2016, Johnny Chan - johnny@picostyle.com
+# (c) 2016, Johnny Chan
 # All rights reserved.
 
 # Redistribution and use in source and binary forms, with or without modification,
@@ -35,7 +33,7 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 # EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# ---------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 import fx
 
@@ -47,7 +45,9 @@ class ShapeOrganizer(fx.Action):
     """
 
     def __init__(self):
-        fx.Action.__init__(self, 'Shape Organizer', menu='Shape Tools', root='PicoStyle')
+        fx.Action.__init__(
+            self, 'Shape Organizer', menu='Shape Tools', root='ChantasticVFX'
+        )
 
     def available(self):
         session = fx.activeSession()
@@ -105,9 +105,12 @@ class ShapeOrganizer(fx.Action):
             # _keep original selection Yes/No
             msg = (
                 'Keep Original Selection?<br/>'
-                'Delete :: [ <span style="color:#FF00FF"><b>{}</b></span> ]'.format(selection.label))
+                'Delete :: [ <span style="color:#FF00FF"><b>{}</b></span> ]'
+                .format(selection.label)
+            )
 
-            if (fx.askQuestion(msg, title='Keep Original', okText='Yes', cancelText='No')):
+            if (fx.askQuestion(
+                    msg, title='Keep Original', okText='Yes', cancelText='No')):
                 selection.visible = False
             else:
                 fx.delete([selection])
