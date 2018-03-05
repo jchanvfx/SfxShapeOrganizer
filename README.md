@@ -5,7 +5,7 @@ Compatibility: Silhouette v5.2 and up
 
 This Script will organise your roto shapes from one Layer into separate Layers based off each shapes color
 
-![screencap01](https://raw.githubusercontent.com/jchanvfx/ShapeOrganizer/master/shapeOrganizer.png)
+![screencap01](https://raw.githubusercontent.com/jchanvfx/SfxShapeOrganizer/master/shapeOrganizer.png)
 
 More info here at: https://vimeo.com/93702764
 
